@@ -51,7 +51,9 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
 
-  # Factories (used in mail preview and specs)
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
 end
 
 group :development do
@@ -64,11 +66,13 @@ group :development do
 end
 
 group :test do
-  gem 'database_cleaner'
-  gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'shoulda-matchers'
+  gem 'database_cleaner-active_record'
+  gem 'simplecov'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'active_model_serializers'
+
+gem 'rswag'

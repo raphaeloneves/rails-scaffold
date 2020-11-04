@@ -1,0 +1,27 @@
+swagger: "2.0"
+info:
+  description: "PROJECT DESCRIPTION"
+  version: "1.0.0"
+  title: "PROJECT TITLE"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "raphaeloneves@outlook.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:3000"
+basePath: "/api/v1"
+tags:
+  - name: "TAG"
+    description: "TAG DESCRIPTION"
+schemes:
+  - "http"
+  - "https"
+paths:
+
+definitions:
+  Error:
+    type: "object"
+    properties:
+      error:
+        type: "string"

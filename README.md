@@ -1,4 +1,4 @@
-# Drover Challenge - Cars API
+# SOME TITLE
 
 ## Ruby version:
 `2.6.5`
@@ -6,6 +6,7 @@
 ## Extra dependencies added to the project
 ```
 gem 'active_model_serializers' -- scopes: root
+gem 'rswag'
 
 gem 'pry-byebug' -- scopes: development and test
 gem 'rspec-its' -- scopes: development and test
